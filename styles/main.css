@@ -1,0 +1,336 @@
+
+/* code for landing page below */
+/* referencing for css code in LANDING PAGE: (1) https://codepen.io/lizcoultersmith/pen/KKKEpNy  
+											 (2) https://codepen.io/ig_design/pen/JxbVRq?editors=1100  
+*/
+
+/* (1) */
+.image { /*this is code to make PROFILE PICTURE into circle shape */
+	 border-radius: 100%;
+}
+/* (1) */ 
+
+/* (2) */
+body { /*this is code to make everything located in center and BACKGROUND IMAGE */
+	  background-image: url("https://i.imgur.com/p1V6H2n.jpg");
+	  background-size: cover;
+	  background-position: center;
+	  margin: 0;
+	  padding: 0;
+}
+
+.hero-section { /* this is code for whole HERO SECTION */
+	 position: relative;
+	 width: 100%;
+	 display: block;
+	 overflow: hidden;
+	 height: 100vh;
+	 text-align: center;
+}
+
+.hero-section .main-header{ /* this is code for MAIN HEADER */
+	 color: #D1C4E9;
+	 font-size: 25px;
+	 line-height: 1;
+	 font-weight: 900;
+	 font-family: 'Gelasio', serif;
+}
+
+.hero-section .description{ /* this is code for DESCRIPTION */
+	 font-family: 'Sacramento', cursive;
+	 letter-spacing: 2px;
+	 color: #7C4DFF;
+	 font-size: 35px;
+	 line-height: 1;
+	 font-weight: 700;
+}
+
+@media screen and (max-width: 580px){ /* this is code for MY DESCRIPTION in mobile version */
+	.image {
+		height: auto;
+		width: 65%;
+    }
+    .hero-section .description {
+		font-size: 25px;
+	}
+}
+
+.hero-section p span{ /* this is code for SOCIAL MEDIA ICON */
+	 margin-left: 20px;
+	 margin-right: 20px;
+	 display: inline-block;
+
+}
+
+.centering-section { /*this is code to make everything located in center */
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+/* (2) */
+
+/* css for LANDING PAGE above */
+
+
+/* css for NAVIGATION below */
+/* referencing for NAVIGATION code: https://sogo.edu.vn/navigation-bar/ */
+
+
+
+.navigation ul li a:hover { /* this is code to make NAVIGATION BUTTON turn blue when you point them */
+	background-color: #536DFE;
+}
+
+li { /*this is code to make NAVIGATION in the left */
+	float:left ;
+}
+
+.navigation-ul { /* this is code for the whole NAVIGATION */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #673AB7;
+}
+
+li a { /* this is code for NAVIGATION BUTTON */
+	display: block;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	padding: 16px 18px;
+	background-color: #673AB7;
+	text-decoration: none;
+}
+
+/* code for NAVIGATION above */
+
+
+/* code for PORTFOLIO PAGE below */
+/* reference for PORTFOLIO PAGE: https://codepen.io/lizcoultersmith/pen/ZEEPGbr */
+
+:root {
+	font-size: 75.5%;
+}
+
+.portfolio-header { /* this is code for PORTFOLIO HEADER */
+	font-size: 3.5rem;
+	font-weight: 400;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+
+hr { /* this is code for hr (create BARRIER) */
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container-2 {
+	width: 96rem;
+	margin: 2rem auto;
+}
+
+.gallery-item-2 { /* this is code for create the deep for images */
+	max-width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+	transition: all .3s;
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery-2 { /* this is code for arrange images */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1.5rem;
+	grid-auto-rows: minmax(150px, auto);
+}
+
+.image-2 { /* this is code for resize images */
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	object-fit: cover;
+}
+
+.center-2 { /* this is code for hidden name of images */
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.gallery-item-2:hover .image-2 {
+	filter: grayscale(1);
+}
+
+.gallery-item-2:hover .center-2 { /* this is code to make the name of images appear when you point in the image by mouse */
+	opacity: 1;
+}
+
+.gallery-item-2:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.name { /* this is code for name of images */
+	color: white;
+	font-size: 2.0em;
+    padding: 16px 32px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* code for CONTACT PAGE below */
+/* refercencing for CONTACT PAGE code: https://codepen.io/dnaibaf/pen/CJfpi */
+.contact-body { 
+	background-color: #F9F9F9;
+	font-family: Helvetica Nue, sans-serif;
+	text-align: center;
+}
+
+.contact-header {
+	color: #212121;
+	font-family: 'Gelasio', serif;
+}
+
+/* code for setting boxes */
+#wrap {
+	width: 600px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+  
+/* code for setting boxes */
+.box1 {
+	padding: 25px;
+	background-color: #F9F9F9;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+
+.form {
+	margin: auto;
+}
+
+
+/* code for text area boxes */
+input, textarea {  
+	width: 200px;
+	padding: 9px;
+	outline: 0;  
+	border: solid 1px #E5E5E5;      
+	background-color: #FFFFFF;
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;      
+}
+
+
+/* code for text area boxes */
+textarea {   
+	width: 530px; max-width: 530px; 
+	height: 150px; 
+	line-height: 150%;
+	font-size: 14px;
+	color: #D7D7D7;
+} 
+  
+input:hover, textarea:hover,  
+input:focus, textarea:focus {   
+	border-color: #C9C9C9;   
+}
+
+.text textarea:focus {
+	color: #000;
+}
+	
+.form label {   
+	margin-left: 10px;   
+	color: #999999;   
+}  
+	
+.submit input {  
+	width: 100px;  
+	padding: 9px 15px;    
+	font-size: 14px;  
+	color: #FFFFFF;
+	background-color: #11A7F2;
+	border: 0;  
+	border-radius: 2px;
+}
+  
+.submit input:hover {
+	cursor: pointer;
+	background-color: #1281B8;
+}
+
+/*code for CONTACT site above*/
+
+/* code for social media icon */
+.social-media {
+	text-align: center;
+	padding: 30px;
+}
+
+span { 
+	padding: 15px;
+}
+
+/* setting font for detail */
+.contact-detail {
+	font-family: 'Gelasio', serif;
+	font-size: 1em;
+}
+
+/* phone version */
+@media screen and (max-width: 640px) {
+	.gallery-2{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.image-2 {
+		width: 30%;
+		margin-left: 5px;
+		margin-bottom: 20px;
+	}
+
+	.border {
+		font-size: small;
+	}
+
+	#wrap {
+		width: 300px;
+	}
+
+	textarea {
+		width: 200px;
+	}
+
+}
+
+
+/* this is code for CV page */
+.cv-body { 
+  background-color:  #ffffff;
+  border-left: 10px solid #536DFE;
+  margin: 1cm;
+  font-size: large;
+  font-family: 'Roboto', sans-serif;
+}
+
+.border {
+	border-top: 1px solid #536DFE;
+	border-bottom: 1px solid #536DFE;
+	
+}
